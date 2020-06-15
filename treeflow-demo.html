@@ -13865,10 +13865,10 @@ array([[12.53768388,  0.41236635],
 
 </div>
 </div>
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[155]:</div>
+<div class="prompt input_prompt">In&nbsp;[157]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">treeflow.beagle</span>
@@ -13883,19 +13883,8 @@ array([[12.53768388,  0.41236635],
     <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.293402</span><span class="p">,</span> <span class="mf">0.20491</span><span class="p">,</span> <span class="mf">0.256425</span><span class="p">,</span> <span class="mf">0.245264</span><span class="p">]),</span>
     <span class="n">kappa</span><span class="o">=</span><span class="mf">20.065921</span><span class="p">,</span>
     <span class="n">rescaling</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[156]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wrapped_likelihood</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">z</span><span class="p">:</span> <span class="n">likelihood</span><span class="p">(</span><span class="n">treeflow</span><span class="o">.</span><span class="n">sequences</span><span class="o">.</span><span class="n">get_branch_lengths</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s1">&#39;tree&#39;</span><span class="p">])</span> <span class="o">*</span> <span class="n">tf</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s1">&#39;clock_rate&#39;</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">wrapped_likelihood</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">z</span><span class="p">:</span> <span class="n">likelihood</span><span class="p">(</span><span class="n">treeflow</span><span class="o">.</span><span class="n">sequences</span><span class="o">.</span><span class="n">get_branch_lengths</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s1">&#39;tree&#39;</span><span class="p">])</span> <span class="o">*</span> <span class="n">tf</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s1">&#39;clock_rate&#39;</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
 <span class="n">wrapped_likelihood</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">sample</span><span class="p">())</span>
 </pre></div>
 
@@ -13909,13 +13898,13 @@ array([[12.53768388,  0.41236635],
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[156]:</div>
+    <div class="prompt output_prompt">Out[157]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;tf.Tensor: shape=(), dtype=float32, numpy=-3928.3677&gt;</pre>
+<pre>&lt;tf.Tensor: shape=(), dtype=float32, numpy=-3978.4492&gt;</pre>
 </div>
 
 </div>
